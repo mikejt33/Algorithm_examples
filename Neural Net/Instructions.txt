@@ -1,0 +1,30 @@
+This assignment is due on Monday 11/21 by 11:59 pm.
+
+You will work in three (or four) person groups as below:
+
+	Fanny Chow - Jackie Scholl - Roger Filmyer
+	Jeremiah Cohen - Michael McCormack - Stephanie Rivera
+	Noah Johnson - Lilianne Raud - Beau Britain
+	Saad Usmani - Shane Caldwell - Lydia Laseur
+	Adriana Souza - Mackenzie Gray - Richard Decal
+	Kevin Hunt - Xiaotai Chai - Joseph Comer - David Duffrin
+
+What I want you to do is to write a routine, or modify existing code, to "train" (as in, find good coefficients) a three neuron feed-forward neural net we discussed in class for an XOR input/output relationship using a conjugate-gradient algorithm with a line-search.
+
+As a reminder, the three logits (perceptrons) are to be arranged as follows:
+
+	x1 - P1 \
+	   X     P3 - y
+	x2 - P2 /
+	
+And, the XOR gate can be thought of as four data points (x1,x2) producing a particular response (y):
+
+	x1   x2   y
+	0    0    0
+	0    1    1
+	1    0    1
+	1    1    0
+
+NOTE: I also want the gradient to be computed and programmed by you via back-propagation. DO NOT USE AUTOMATIC DIFFERENTIATION. DO NOT DIFFERENTIATE VIA PERTURBATION.
+
+-Gary
