@@ -1,0 +1,30 @@
+In this assignment you will redo our previous assignment in groups of three (to be assigned randomly in class). Assignment is to be submitted on Monday, Nov 6th by 11:59 pm. Submit only one assignment per group. Do not forget to branch before you begin.
+
+A submission includes your code and a short write up with respect to what you have done and thoughts about how it went.
+
+1) You will do this for both of the objective functions (A) and (B.ii). Note, you can try (B), but numerical underflow will be an issue. 
+
+2) You will start your search for the optimal coefficients from the origin (both coefficients are equal to zero).
+
+3) You will compute a gradient and use the negative of the gradient direction, p_k, as a search direction. (Two ways to do this. i) Numerically, by taking perturbations and re-evaluating the function; or ii) directly with a closed form solution.)
+
+4) You will perform a line search along this direction. Use algorithms 3.5 and 3.6 in our text for this part.
+
+5) You would like to stop your algorithm when you get to within a distance of 0.0001 of the optimal. (You may ask, What does this even mean? Yes, I am being deliberately vague.) If you don't stop, go back to step 3.
+
+6) You will plot the path your algorithm took with a visible dot for every location (b0,b1) of function evaluation that you did. Mark points of where you look for a new direction different from points where you are just performing a line search.
+
+7) Provide the number of function evaluations done. 
+
+Your code will look something like the following:
+
+	x = starting point (b0 = 0, b1 = 0)
+	repeat until b0, b1 are almost optimal
+		pick a direction that is the steepest descent direction from (b0,b1)
+		from (b0,b1), line search from that direction 
+			(i.e., find the alpha) that works fill reduce your function "enough"
+			(I like strong Wolfe conditions for this, but you don't have to)
+		let (b0,b1) equal that new point, e.g.,
+			(b0,b1) = (b0,b1) + alpha * p_k
+	end of repeat loop
+
