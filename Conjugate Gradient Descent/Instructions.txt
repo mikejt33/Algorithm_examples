@@ -1,0 +1,9 @@
+
+
+Note, I am providing you with my code for line search on the master branch. Reason being is that it is easy to get bugged down with numericas underflow issues (that is why I had an infinite loop behavior during lecture). I hope that this code will avoid these issues without causing other numerical issues. (It does in my test cases.) This code should also be compatible with my posted code from last assignment.
+
+This assignment is due Monday, 11/13, before 11:59 pm.
+
+A) Redo the last group assignment, now using conjugate gradient descent method with line-search. 
+
+B) Comment on the total number of function valuations it takes to "converge" vs what it was, to "converge" similarly, for gradient descent. 
