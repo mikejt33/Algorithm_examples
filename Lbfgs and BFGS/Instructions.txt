@@ -1,0 +1,20 @@
+For this assignment, I would like us to organize into the following groups:
+
+	Kevin Hunt - Michael McCormack - Noah Johnson
+	Shane Caldwell - Adriana Souza - Jackie Scholl 
+	Mackenzie Gray - Lilianne Raud - Xiaotai Chai
+	Saad Usmani - Jerimiah Cohen - Roger Filmyer
+	Lydia Laseur - Fanny Chow - David Duffrin
+	Joseph Comer - Richard Decal - Stephanie Rivera - Beau Britain
+
+The assignment is due by 11:59 pm on Wednesday the 29th.
+
+In this assignment, you will again create code to find best parameters for on optimization problem. Here, you will implement BFGS and L-BFGS methods for choosing the search direction and conduct a line search in this direction. For c1, again, use something very close to 0. However, for c2, use something much closer to 1. E.g., c2=0.9
+
+I would prefer you to apply this method to the parameter search for our 2-layer neural net. (You can use another groups code for generating the gradient because not every group were successful with their backpropagation attempts.) However, if that is too much, try doing this for the original two parameter model. 
+
+For L-BFGS, use a depth of about 5 if applying it to the neural net problem. If applying it to the original two parameter model, a depth of 2 is plenty.
+
+Besides your code, I would like you to turn a text file as10.txt where you discuss the comparison of Gradient Descent, Conjugate Gradient, BFGS and L-BFGS. (50-100 words please).
+
+-Gary
